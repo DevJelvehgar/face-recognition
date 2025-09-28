@@ -65,7 +65,7 @@ class FaceRecognition:
             print(f"Error extracting face embedding: {str(e)}")
             return None
     
-    def find_most_similar_faces(self, query_embedding, top_k=5, expected_files=None):
+    def find_most_similar_faces(self, query_embedding, top_k=15, expected_files=None):
         """Find most similar faces in database"""
         if not self.face_database:
             return []

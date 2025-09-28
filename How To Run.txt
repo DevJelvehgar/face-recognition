@@ -1,0 +1,19 @@
+#1 Install Requirements
+pip install -r requirements.txt
+
+------------------
+
+#2 Build Database: if "face_database.pkl" not exist
+python build_database.py
+
+----------------------
+
+#3 Run Main code
+python main.py
+
+--------------------
+
+#4 Run Test for recognition ( optional )
+python test_sample_recognition.py
+
+

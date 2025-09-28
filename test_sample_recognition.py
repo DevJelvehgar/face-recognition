@@ -24,9 +24,9 @@ def test_without_expected_files():
         query_embedding = fr.extract_face_embedding(image)
 
         if query_embedding is not None:
-            # Get top 10 results without prioritizing expected files
+            # Get top 15 results without prioritizing expected files
             similar_faces = fr.find_most_similar_faces(
-                query_embedding, top_k=50)
+                query_embedding, top_k=15)
 
             print("📊 Top 10 Similar Faces (Natural Results):")
             for i, face in enumerate(similar_faces, 1):
